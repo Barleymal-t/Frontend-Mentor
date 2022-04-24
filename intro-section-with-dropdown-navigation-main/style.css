@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Epilogue;
+    src: url(https://fonts.google.com/specimen/Epilogue);
+}
+body {
+    font-family: Epilogue;
+    font-size : 18px;
+    background-color: hsl(0, 0%, 98%);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 95vw;
+    margin: auto;
+}
+#logo {
+    float: left;
+    margin: 0 1rem;
+}
+
+ul,p {
+    color: hsl(0, 0%, 41%);
+    
+    display: flex;
+    
+}
+li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.hero-text {
+    height: 70%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+p {
+    margin: 2rem 0;
+    width: 50%;
+    word-spacing: 4px;
+    line-height: 2;
+    
+}
+
+
+#hero-img {
+    width: 100%;
+    height:95vh;
+}
+button {
+    border-color: transparent;
+    font-size: 1em;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+}
+
+.dropdown {
+    position: relative
+}
+
+.dropdown-menu > ul{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.5rem);
+    background-color: white;
+    box-shadow: 0 2px 2px 2px grey;
+    opacity: 0;
+    border-radius: 1em;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.dropdown-menu * {
+    margin: 10px;
+    width: max-content;
+}
+
+.dropdown >.dropdown-head:hover + .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+a{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+a:hover{
+    color: hsl(0, 0%, 8%);
+}
