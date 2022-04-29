@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(224, 23%, 55%);
+}
+
+body {
+    font-size: 16px;
+    background-size: 100vw 50vh;
+    background-color: hsl(225, 100%, 98%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    max-width: 375px;
+    margin: 5vh auto;
+    border-radius: 2px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px hsl(224, 23%, 55%);
+}
+.down-below {
+    margin: 3%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.down-below * {
+    margin: 5px 0;
+}
+h1,h3 {
+    color: hsl(223, 47%, 23%);
+}
+.plan-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0 20px;
+    text-align: left;
+}
+
+.plan-section a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+.plan-section a:hover,
+.plan-section a:active {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+button {
+    border-radius: 10px;
+    height: 40px;
+    border-color: transparent;
+    font-weight: bold;
+}
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 5px 10px hsl(225, 100%, 98%);
+}
+.payment:active,
+.payment:hover,
+.cancel:active,
+.cancel:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+}
+
+#illustration-hero {
+    border-radius: 25px 25px 0 0;
+}
